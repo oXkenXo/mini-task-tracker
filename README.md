@@ -1,17 +1,59 @@
-# mini_task_tracker
+# Mini Task Tracker
 
-A new Flutter project.
+Aplikasi mobile Flutter sederhana untuk mencatat daftar tugas harian.
 
-## Getting Started
+## Identitas
+- Nama: Keanu Fibie Dimasyqi
+- NIM: 103012430045
 
-This project is a starting point for a Flutter application.
+## Fitur
+- Menambah tugas lewat kolom input dan tombol Simpan
+- Menampilkan daftar tugas beserta jumlahnya
+- Menandai tugas selesai (teks tugas dicoret)
+- Menghapus tugas dari daftar
+- Peringatan (SnackBar) jika input kosong
 
-A few resources to get you started if this is your first Flutter project:
+Data disimpan di state aplikasi menggunakan `setState`, tanpa database.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Screenshot
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Tampilan Awal | Input Tugas | Daftar Tugas |
+|---|---|---|
+| ![](screenshots/1-awal.png) | ![](screenshots/2-input.png) | ![](screenshots/3-daftar.png) |
+
+| Tandai Selesai | Hapus Tugas |
+|---|---|
+| ![](screenshots/4-centang.png) | ![](screenshots/5-hapus.png) |
+
+## Cara Menjalankan
+
+### Install APK
+Unduh file `app-release.apk` dari folder Google Drive pengumpulan, lalu install di perangkat Android.
+
+### Dari Source Code
+1. Pastikan Flutter SDK sudah terpasang (cek dengan `flutter doctor`)
+2. Clone repositori ini:
+   ```
+   git clone https://github.com/oXkenXo/mini-task-tracker.git
+   cd mini-task-tracker
+   ```
+3. Install dependency:
+   ```
+   flutter pub get
+   ```
+4. Jalankan di emulator atau perangkat Android:
+   ```
+   flutter run
+   ```
+
+### Deklarasi Penggunaan AI
+- Apakah menggunakan AI? Ya
+- Tool AI yang digunakan: Claude
+- Estimasi persentase kontribusi AI: 20%
+- Bagian kode/fitur yang dibantu AI:
+  - Referensi dan penjelasan konsep dasar Flutter (StatefulWidget, setState, ListView.builder, Checkbox)
+  - Troubleshooting instalasi Flutter dan Android SDK, serta error saat build APK (konfigurasi versi NDK)
+  - Debugging kesalahan sintaks
+  - Penyusunan struktur README.md
+- Pernyataan:
+  "Saya menyatakan bahwa saya memahami alur dan fungsi dari seluruh kode yang ada dalam repositori ini"
